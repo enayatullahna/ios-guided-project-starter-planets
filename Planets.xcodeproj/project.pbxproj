@@ -13,6 +13,10 @@
 		9DDBBD112113609800A55978 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDBBD0F2113609800A55978 /* LaunchScreen.storyboard */; };
 		9DDBBD19211360D100A55978 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD18211360D100A55978 /* Planet.swift */; };
 		9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD1E211360F500A55978 /* PlanetController.swift */; };
+		E6BEAF38229F707100875DD3 /* PlanetsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BEAF37229F707100875DD3 /* PlanetsCollectionViewController.swift */; };
+		E6BEAF3A229F70F600875DD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BEAF39229F70F600875DD3 /* SettingsViewController.swift */; };
+		E6BEAF3D229F719A00875DD3 /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BEAF3C229F719A00875DD3 /* PlanetCollectionViewCell.swift */; };
+		E6BEAF40229F7CF700875DD3 /* String+UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BEAF3F229F7CF700875DD3 /* String+UserDefaultKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9DDBBD122113609800A55978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DDBBD18211360D100A55978 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		9DDBBD1E211360F500A55978 /* PlanetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetController.swift; sourceTree = "<group>"; };
+		E6BEAF37229F707100875DD3 /* PlanetsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsCollectionViewController.swift; sourceTree = "<group>"; };
+		E6BEAF39229F70F600875DD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E6BEAF3C229F719A00875DD3 /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
+		E6BEAF3F229F7CF700875DD3 /* String+UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UserDefaultKeys.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,13 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27F670EB21EFC6AA0035C1BF /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
 		9DDBBCFA2113609700A55978 = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +64,11 @@
 		9DDBBD052113609700A55978 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
-				27F670EB21EFC6AA0035C1BF /* View Controllers */,
+				E6BEAF3E229F7CB000875DD3 /* Helpers */,
 				9DDBBD1A211360D500A55978 /* Model */,
 				9DDBBD1C211360E000A55978 /* Model Controller */,
+				E6BEAF36229F6C6400875DD3 /* View Controller */,
+				E6BEAF3B229F716E00875DD3 /* Views */,
 				E6BEAF35229F6A6C00875DD3 /* Storyboards */,
 				9DDBBD1B211360DA00A55978 /* Resources */,
 			);
@@ -105,6 +108,31 @@
 				9DDBBD0F2113609800A55978 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E6BEAF36229F6C6400875DD3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6BEAF37229F707100875DD3 /* PlanetsCollectionViewController.swift */,
+				E6BEAF39229F70F600875DD3 /* SettingsViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		E6BEAF3B229F716E00875DD3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6BEAF3C229F719A00875DD3 /* PlanetCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6BEAF3E229F7CB000875DD3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E6BEAF3F229F7CF700875DD3 /* String+UserDefaultKeys.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +209,10 @@
 			files = (
 				9DDBBD1F211360F500A55978 /* PlanetController.swift in Sources */,
 				9DDBBD072113609700A55978 /* AppDelegate.swift in Sources */,
+				E6BEAF40229F7CF700875DD3 /* String+UserDefaultKeys.swift in Sources */,
+				E6BEAF3D229F719A00875DD3 /* PlanetCollectionViewCell.swift in Sources */,
+				E6BEAF38229F707100875DD3 /* PlanetsCollectionViewController.swift in Sources */,
+				E6BEAF3A229F70F600875DD3 /* SettingsViewController.swift in Sources */,
 				9DDBBD19211360D100A55978 /* Planet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Planets/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -344,7 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Planets/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
